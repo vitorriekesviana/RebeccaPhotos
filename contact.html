@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Rebecca Kraft</title>
+<meta name="description" content="Inquire about wedding, graduation, and event photography with Rebecca Kraft." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">RK</span>
+      <span class="logo-divider"></span>
+      <span class="logo-name">Rebecca Kraft</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- CONTACT HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Vol. 01 — Let's Connect</p>
+    <h1 class="page-title">Begin an<br><em>Inquiry</em></h1>
+    <p class="page-lede">
+      Thank you for considering my work. For bookings, collaborations,
+      or any questions — please use the form below or reach out directly.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT BODY -->
+<section class="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-block">
+          <h3>By Email</h3>
+          <a href="mailto:rmkraft2003@gmail.com" class="big-link">rmkraft2003@gmail.com</a>
+        </div>
+        <div class="info-block">
+          <h3>Based In</h3>
+          <p class="big-text">Tampa, Florida<br><span>Available for travel upon request</span></p>
+        </div>
+        <div class="info-block">
+          <h3>Elsewhere</h3>
+          <ul class="social-list">
+            <li><a href="http://www.linkedin.com/in/rebecca-kraft-552629254" target="_blank" rel="noopener">LinkedIn <span>↗</span></a></li>
+            <li><a href="https://www.instagram.com/rkraft_productions" target="_blank" rel="noopener">Instagram <span>↗</span></a></li>
+            <li><a href="https://youtube.com/@rebeccakraft1022" target="_blank" rel="noopener">YouTube <span>↗</span></a></li>
+            <li><a href="https://usfznews.com/author/kraft24usf-edu/" target="_blank" rel="noopener">Z News Writing <span>↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <label>
+              <span>Full Name</span>
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required>
+            </label>
+          </div>
+          <label>
+            <span>Type of Event</span>
+            <select name="type">
+              <option>Wedding</option>
+              <option>Pre-Wedding / Engagement</option>
+              <option>Graduation</option>
+              <option>Birthday / Milestone</option>
+              <option>Headshots</option>
+              <option>Editorial / Other</option>
+            </select>
+          </label>
+          <label>
+            <span>Event Date (if known)</span>
+            <input type="text" name="date" placeholder="Month / Year">
+          </label>
+          <label>
+            <span>Tell me about your event</span>
+            <textarea name="message" rows="5" placeholder="Where, when, and what you're hoping for…"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-lg">Send Inquiry →</button>
+          <p class="form-note" id="formNote" hidden>Thank you — your inquiry has been noted. I'll be in touch shortly.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-mark">RK</span>
+        <p class="footer-name">Rebecca Kraft</p>
+        <p class="footer-tag">Photography & Visual Storytelling</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <a href="http://www.linkedin.com/in/rebecca-kraft-552629254" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/rkraft_productions" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://youtube.com/@rebeccakraft1022" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://usfznews.com/author/kraft24usf-edu/" target="_blank" rel="noopener">Z News</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:rmkraft2003@gmail.com">rmkraft2003@gmail.com</a>
+        <p class="footer-location">Tampa, Florida</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>© <span id="year"></span> Rebecca Kraft. All photographs and written work her own.</p>
+      <p class="footer-credit">Est. MMXXV</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
