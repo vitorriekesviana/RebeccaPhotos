@@ -77,3 +77,30 @@ if ('IntersectionObserver' in window) {
     io.observe(el);
   });
 }
+// Portfolio filtering
+const filterButtons = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.m-item');
+
+if (filterButtons.length) {
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      items.forEach(item => {
+        const cats = (item.dataset.cat || '').split(' ');
+        if (filter === 'all' || cats.includes(filter)) {
+          item.classList.remove('hidden');
+          // Garante visibilidade caso o scroll-reveal ainda não tenha rodado
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+}
+
