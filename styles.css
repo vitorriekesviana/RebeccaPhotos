@@ -1258,3 +1258,17 @@ a { color: inherit; text-decoration: none; }
 
   .doc-grid { grid-template-columns: 1fr; gap: 1.5rem; }
 }
+
+/* =========================================================
+   THEME — USF Green accent
+   ========================================================= */
+.theme-green {
+  --rust:  #006747;  /* USF Green — accent principal (links, números, itálicos) */
+  --brass: #CFC493;  /* USF Gold — accent secundário (eyebrow no CTA) */
+}
+
+/* opcional: um verde mais escuro para hover, dá mais profundidade */
+.theme-green .btn-primary:hover,
+.theme-green .nav-links a:hover::after {
+  background-color: #005432; /* Evergreen — tom mais escuro, só para hover */
+}
